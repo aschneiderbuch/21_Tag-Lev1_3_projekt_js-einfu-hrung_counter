@@ -112,3 +112,35 @@ article:nth-of-type(2){
 /*  */
 }/*  */
 /* ****************** media Queries  Ende  ************* */
+
+/* ****************** media Queries  Start  370 px  ************* */
+
+@media only screen and (max-width: 370px) {
+
+    html { max-width: 370px; }
+
+
+
+form{
+    width: 98vw
+}
+
+article:nth-of-type(1){
+    margin-top: -10vh;  /* * rückt alles weiter hoch */
+}
+
+article:nth-of-type(3){
+    width: 95vw
+}
+
+article:nth-of-type(2){
+    width: 65vw
+
+}
+
+
+
+
+
+
+/* ****************** media Queries  Ende  370 px  ************* */
