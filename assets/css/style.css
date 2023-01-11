@@ -80,4 +80,35 @@ overflow: hidden;       /* * da 2.6 rem zu groß für Reset Button,
 }
 
 
-/* ****************** media Queries ************* */
+/* ****************** media Queries  Start  ************* */
+
+@media only screen and (max-width: 600px) {
+    html { max-width: 600px;
+    }
+
+    section{
+        padding-top: 1vh;
+    }
+
+form{
+    width: 90vw;
+    height: 98vh;
+}
+
+
+
+article:nth-of-type(3){
+    width: 70vw;
+}
+
+article:nth-of-type(2){
+    width: 60vw;
+}
+
+
+
+
+
+/*  */
+}/*  */
+/* ****************** media Queries  Ende  ************* */
