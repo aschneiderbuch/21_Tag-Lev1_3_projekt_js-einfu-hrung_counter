@@ -39,6 +39,7 @@ let button5 = document.getElementById("button5")
 let button6 = document.getElementById("button6")
 let button7 = document.getElementById("button7")
 let button8 = document.getElementById("button8")
+// button wird mit dir id im html verknüpft
 
 
 
@@ -52,7 +53,7 @@ button5.addEventListener("click", rechnen5); // +
 button6.addEventListener("click", rechnen6); // -
 button7.addEventListener("click", rechnen7); // Reset
 button8.addEventListener("click", rechnen8); // mal 2
-
+// wenn button ge clickt wird, dann wird function rechnen aufgerufen
 
 
 
@@ -62,15 +63,19 @@ button8.addEventListener("click", rechnen8); // mal 2
 // ******** rechnen 8  = *
 // ******** rechnen 7  =  0    Setzt alles auf 0
 
-//* +  
-function rechnen1() {
+//* +           
+//function wird aufgerufen
+function rechnen1() {               // durch button clicken wird function aufgerufen
 
-    ergebniss += ((button1.innerHTML) * 1)
+    ergebniss += ((button1.innerHTML) * 1)  // ergebniss wird gecheckt, am Anfang 0
+                                            // bei mehreren durchläufen dient es als Zwischenspeicher
+                                            // nun wird mit +=  html Text Wert wird abefragt und dazu gerechnet
 
     console.log(inhalt)
-    ergebniss = ergebniss
+    ergebniss = ergebniss                       
     console.log(ergebniss)
-    output.innerHTML = (ergebniss)
+    output.innerHTML = (ergebniss)          // dann wird überschreibt das alte ergebnis das neue 
+                                            // ergebnis und wird wiedere in der Hmtl als Text ausgegeben
 }
 
 //* -
